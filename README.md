@@ -77,7 +77,7 @@ This project is made up of three main components:
     Now, the server is running and can accept requests from the ESP32.
 
 7. **Connect to the Server**: 
-    Open your browser and go to http://localhost:5002. 
+    Open your browser and go to http://YOUR_SYSTEM_IP:YOUR_PORT. 
     You should see the real-time data from your ESP32 on the webpage.
 
 ## What You Need
