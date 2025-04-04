@@ -3,14 +3,42 @@
 <head>
   <title>ESP32-SensorStream</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    #info {
+      margin-top: 20px;
+      font-family: sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #resetBtn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 15px;
+      border: none;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #resetBtn:hover {
+      background-color: #023e8a;
+    }
+  </style>
 </head>
 <body>
   <div id="3Dcube"></div>
+
   <div id="info">
     <p>Roll: <span id="gyroX">0.00</span></p>
     <p>Pitch: <span id="gyroY">0.00</span></p>
     <p>Yaw: <span id="gyroZ">0.00</span></p>
+
+    <button id="resetBtn" onclick="resetPosition()">Reset Position</button>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
 </body>
