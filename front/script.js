@@ -71,7 +71,7 @@ function resetPosition() {
 
 async function updateCubeRotation() {
   try {
-    const response = await fetch('http://192.168.1.104:5002/angles');
+    const response = await fetch('http://your_system_IP:your_port/angles');
     const data = await response.json();
 
     const adjustedPitch = data.pitch - offset.pitch;
