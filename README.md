@@ -67,6 +67,8 @@ This project is made up of three main components:
   
     Click on the green play button next to the Application.java file to run the server.
 
+   *YOU SHOULD CHANGE PORT IN CONFIG TO YOUR CUSTOM PORT*
+
 6. **Check if the Server is Running**:
   
     Once you run the server, you should see output in the console like:
