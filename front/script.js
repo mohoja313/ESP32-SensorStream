@@ -56,7 +56,7 @@ function onWindowResize() {
 }
 
 function resetPosition() {
-  fetch('http://192.168.1.104:5002/angles')
+  fetch('http://your_system_IP:your_port/angles')
     .then(response => response.json())
     .then(data => {
       offset.pitch = data.pitch;
